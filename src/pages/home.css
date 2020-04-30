@@ -1,0 +1,8 @@
+#home {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+#home .row {
+    height: 50vh;
+}

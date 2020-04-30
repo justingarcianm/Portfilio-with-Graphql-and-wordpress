@@ -1,12 +1,52 @@
 import React from 'react';
+import { Query } from 'react-apollo'
+import gql from 'graphql-tag'
+import Project from './Project'
+import './projects.css'
 
+const Projects = () => (
+    <Query query={gql`
+    {
+        projects {
+          edges {
+            node {
+              title
+              date
+              content
+              featuredImage {
+                altText
+                sourceUrl
+              }
+              project_meta {
+                githubLink
+                liveSite
+              }
+            }
+          }
+        }
+      }
+    `}>
+        {
+            ({ loading, error, data }) => {
+                if( loading) {
+                    return <h2>Loading...</h2>
+                }
+                return(
+                    <div id="projects">
+                    <h1>Projects</h1>
+                        {data.projects.edges.map( (project,key) => {
+                            
+                            return (
+                                <Project key={key} project={project} number={key}/>
+                            )
+                        } )}
+                   
+                </div>
+                )
+            }
+        }
+    </Query>
+)
 
-const Projects = () => {
-    return(
-        <div>
-            <h1>Projects</h1>
-        </div>
-    )
-}
 
 export default Projects;

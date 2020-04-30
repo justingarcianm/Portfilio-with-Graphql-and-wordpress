@@ -11,16 +11,17 @@ import Footer from './Components/Footer'
 const client = new ApolloClient({
   uri:'http://justins-portfolio.local/graphql'
 })
+
 function App() {
   return (
    <ApolloProvider client={client}>
      <BrowserRouter>
      <Header/>
-       <div className="container">
+       <main>
          <Route exact path="/" component={Home}/>
          <Route path="/about" component={About}/>
          <Route path="/projects/:slug" component={Project}/>
-       </div>
+       </main>
      <Footer/>
      </BrowserRouter>
    </ApolloProvider>

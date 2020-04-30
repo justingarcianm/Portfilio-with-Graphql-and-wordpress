@@ -1,11 +1,13 @@
 import React from 'react';
-
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
     return(
-        <div>
-            <h1>Header</h1>
-        </div>
+        <header>
+            <Link to="/">
+            <h1>Navbar</h1>
+            </Link>
+        </header>
     )
 }
 

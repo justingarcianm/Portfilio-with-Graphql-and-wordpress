@@ -3,9 +3,10 @@ import React from 'react';
 
 const Footer = () => {
     return(
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer>
+            <h2>Contact form</h2>
+            <h2>Footer</h2>
+        </footer>
     )
 }
 

@@ -9,26 +9,27 @@ const Project = (props) => {
     };
     // sets className depending on true/false
     const getClassName = getNum(props.number) ? `col-md-6 order-md-1` : `col-md-6 order-md-3`
-
+    //  deconstructs props for fun
+    const { title, content, featuredImage, project_meta } = props.project.node
     return(
                                         <div className="row project">
                                     <div className={ getClassName }>
-                                    <img src={props.project.node.featuredImage.sourceUrl} 
-                                        alt={props.project.node.featuredImage.altText}
+                                    <img src={featuredImage.sourceUrl} 
+                                        alt={featuredImage.altText}
                                         className="responsive-img z-depth-2"/>
                                     </div>
                                     <div className="col-md-6 order-md-2">
                                         <div className="divider"></div>
-                                    <h3>{props.project.node.title}</h3>
-                                    {props.project.node.content}
+                                    <h3>{title}</h3>
+                                    {content}
                                     <div className="row">
                                         <div className="col-6">
-                                            <Link to={`${props.project.node.project_meta.githubLink}`}>
+                                            <Link to={`${project_meta.githubLink}`}>
                                                 <button className="btn btn-primary">Github</button>
                                             </Link>
                                         </div>
                                         <div className="col-6">
-                                        <Link to={`${props.project.node.project_meta.liveSite}`}>
+                                        <Link to={`${project_meta.liveSite}`}>
                                                 <button className="btn btn-primary">Demo</button>
                                             </Link>
                                         </div>

@@ -21,7 +21,7 @@ const Project = (props) => {
                                     <div className="col-md-6 order-md-2">
                                         <div className="divider"></div>
                                     <h3>{title}</h3>
-                                    {content}
+                                    <div dangerouslySetInnerHTML={{ __html: content }} />
                                     <div className="row">
                                         <div className="col-6">
                                             <Link to={`${project_meta.githubLink}`}>

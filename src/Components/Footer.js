@@ -1,11 +1,12 @@
 import React from 'react';
+import ContactForm from './ContactForm'
 import './footer.css'
 
 const Footer = () => {
     return(
-        <div>
+        <div id="contactWrapper">
             <div className="container">
-            <h2>Contact form</h2>
+            <ContactForm/>
             </div>
             <footer>
                 <div className="container-fluid">

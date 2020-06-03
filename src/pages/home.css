@@ -6,3 +6,35 @@
 #home .row {
     height: 90vh;
 }
+
+#home .textBlock p {
+   pointer-events: none;
+}
+
+#home .textBlock {
+   transition: all ease 1s;
+}
+
+#home .arrow {
+    font-size: 2em;
+    transition: all ease-out 1s;
+}
+
+.textBlock.showText {
+    max-height: 500px;
+    opacity: 1;
+}
+.textBlock.hideText {
+    max-height: 0px;
+    opacity: 0;
+}
+
+#home .arrow:hover {
+    color: #d3ac2b;
+    cursor: pointer;
+}
+.show {
+    transform: translateY(500px);
+    transform: rotate(180deg);
+    color: #d3ac2b;
+}

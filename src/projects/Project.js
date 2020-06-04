@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import './project.css'
 
 const Project = (props) => {
@@ -19,19 +18,20 @@ const Project = (props) => {
                                         className="responsive-img z-depth-2"/>
                                     </div>
                                     <div className="col-md-6 order-md-2">
-                                        <div className="divider"></div>
+                                       
                                     <h3>{title}</h3>
+                                    <div className="divider"></div>
                                     <div dangerouslySetInnerHTML={{ __html: content }} />
                                     <div className="row">
                                         <div className="col-6">
-                                            <Link to={`${project_meta.githubLink}`}>
+                                            <a href={`${project_meta.githubLink}`} target="_blank" rel="noopener noreferrer">
                                                 <button className="btn btn-primary">Github</button>
-                                            </Link>
+                                            </a>
                                         </div>
                                         <div className="col-6">
-                                        <Link to={`${project_meta.liveSite}`}>
+                                        <a href={`${project_meta.liveSite}`} target="_blank" rel="noopener noreferrer">
                                                 <button className="btn btn-primary">Demo</button>
-                                            </Link>
+                                            </a>
                                         </div>
                                     </div>
                                     </div>

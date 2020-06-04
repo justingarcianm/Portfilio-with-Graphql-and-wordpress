@@ -9,7 +9,6 @@ const ContactForm = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(email,name,message)
 
         let formData = new FormData()
         formData.set("your-name", name)
@@ -39,7 +38,7 @@ const ContactForm = () => {
 
     return (
         <div id="contactForm">
-             <h2>Contact Me</h2>
+             <h2 className="secondary-header">Contact Me</h2>
 <div className="row">
     <div className="col-2"></div>
 
@@ -53,8 +52,7 @@ const ContactForm = () => {
     type="email" 
     className="form-control" 
     value={email} 
-    onChange={e => setEmail(e.target.value)} 
-    placeholder="Enter email"
+    onChange={e => setEmail(e.target.value)}
     />
 
   </div>
@@ -65,8 +63,7 @@ const ContactForm = () => {
     type="text" 
     className="form-control" 
     value={name} 
-    onChange={e => setName(e.target.value)} 
-    placeholder="Name"
+    onChange={e => setName(e.target.value)}
     />
 
   </div>
@@ -92,6 +89,7 @@ const ContactForm = () => {
 
     <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
   </div>
+  <br/>
   <button type="submit" className="btn btn-primary">Submit</button>
 </form>
     </div>

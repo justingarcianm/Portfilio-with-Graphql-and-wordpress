@@ -5,8 +5,8 @@ import './header.css'
 const Header = () => {
     return(
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark"> 
-            <NavLink to="/">
-            Navbar
+            <NavLink className="nav-link" to="/">
+            <h3 style={{color:"#fff"}}>Justin Garcia</h3>
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@ const Header = () => {
                     <NavLink className="nav-link" activeClassName="active" to="/about">About</NavLink>
                     </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="https://github.com/justingarcianm"><i className="fab fa-github"></i></a>
+                    <a className="nav-link" href="https://github.com/justingarcianm" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                     </li>
             </ul>
             </div>

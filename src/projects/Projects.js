@@ -41,7 +41,7 @@ const Projects = () => (
                 return(
                     <div id="projects">
                       <div className="container text-center">
-                    <h1>Projects</h1>
+                    <h2 className="secondary-header">Projects</h2>
                         {data.projects.edges.map( (project,key) =>  <Project key={key} project={project} number={key}/> )}
                    </div>
                 </div>

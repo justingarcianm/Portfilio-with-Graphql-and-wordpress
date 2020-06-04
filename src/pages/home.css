@@ -34,6 +34,7 @@
     cursor: pointer;
 }
 .show {
+    margin-top: 20px;
     transform: translateY(500px);
     transform: rotate(180deg);
     color: #d3ac2b;

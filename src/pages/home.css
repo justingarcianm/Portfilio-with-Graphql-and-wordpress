@@ -33,9 +33,18 @@
     color: #d3ac2b;
     cursor: pointer;
 }
-.show {
+.moveArrow {
     margin-top: 20px;
     transform: translateY(500px);
     transform: rotate(180deg);
     color: #d3ac2b;
+}
+.imgSpacing {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width:500px){
+    #home .row {
+        height: 60vh;
+    }
 }

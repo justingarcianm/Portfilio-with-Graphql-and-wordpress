@@ -4,7 +4,7 @@ import './header.css'
 
 const Header = () => {
     return(
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
             <NavLink className="nav-link" to="/">
             <h3 style={{color:"#fff"}}>Justin Garcia</h3>
             </NavLink>
@@ -19,6 +19,9 @@ const Header = () => {
                     </li>
                 <li className="nav-item">
                     <NavLink className="nav-link" activeClassName="active" to="/about">About</NavLink>
+                    </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#contactForm">Contact</a>
                     </li>
                 <li className="nav-item">
                     <a className="nav-link" href="https://github.com/justingarcianm" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>

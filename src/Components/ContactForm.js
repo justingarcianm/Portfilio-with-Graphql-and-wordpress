@@ -40,9 +40,9 @@ const ContactForm = () => {
         <div id="contactForm">
              <h2 className="secondary-header">Contact Me</h2>
 <div className="row">
-    <div className="col-2"></div>
+    <div className="col-md-2"></div>
 
-    <div className="col-8">
+    <div className="col-md-8">
 
     <form onSubmit={handleSubmit}>
   <div className="form-group">
@@ -94,7 +94,7 @@ const ContactForm = () => {
 </form>
     </div>
 
-    <div className="col-2"></div>
+    <div className="col-md-2"></div>
 </div>
 
         </div>

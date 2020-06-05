@@ -21,7 +21,7 @@ const Home = () => {
                     <Link to='/about'>Read more about me!</Link>
                     </div>
                     <i 
-                    className={`fas fa-chevron-down arrow ${text ? 'show' : ''}`}
+                    className={`fas fa-chevron-down arrow ${text ? 'moveArrow' : ''}`}
                     onClick={() => setText(!text)}
                     ></i>
                 </div>

@@ -12,7 +12,7 @@ const Project = (props) => {
     const { title, content, featuredImage, project_meta } = props.project.node
     return(
                                         <div className="row project">
-                                    <div className={ getClassName }>
+                                    <div className={`imgSpacing ${getClassName} `}>
                                     <img src={featuredImage.sourceUrl} 
                                         alt={featuredImage.altText}
                                         className="responsive-img z-depth-2"/>

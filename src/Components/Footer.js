@@ -12,7 +12,8 @@ const Footer = () => {
                 <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 my-auto text-center">
-                    <h2>Footer</h2>
+                    <p>This site is powered by WordPress</p>
+                    <p>Site created by Justin Garcia</p>
                     </div>
                 </div>
                 </div>

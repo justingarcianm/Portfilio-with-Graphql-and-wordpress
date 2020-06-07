@@ -21,6 +21,7 @@ const Project = (props) => {
                                        
                                     <h3>{title}</h3>
                                     <div className="divider"></div>
+                                    <br/>
                                     <div dangerouslySetInnerHTML={{ __html: content }} />
                                     <div className="row">
                                         <div className="col-6">

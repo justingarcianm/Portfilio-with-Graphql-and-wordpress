@@ -1,5 +1,5 @@
 #home {
-    background-color: #ccc;
+    background-color: #eee;
     padding: 10px;
 }
 
@@ -7,44 +7,62 @@
     height: 90vh;
 }
 
-#home .textBlock p {
-   pointer-events: none;
+#home h1 {
+    font-size: 9.5em;
+    line-height: 1em;
+}
+#home h3 {
+    font-size: 3.5em;
+    color:#ebc81e;
+    letter-spacing: .1em;
 }
 
-#home .textBlock {
-   transition: all ease 1s;
+
+#home p {
+    line-height: 1.9em;
+    text-align: justify;
 }
 
-#home .arrow {
-    font-size: 2em;
-    transition: all ease-out 1s;
+#home a {
+    color: #ebc81e;
 }
 
-.textBlock.showText {
-    max-height: 500px;
-    opacity: 1;
-}
-.textBlock.hideText {
-    max-height: 0px;
-    opacity: 0;
+#home a:hover {
+    color: #ebc81e;
 }
 
-#home .arrow:hover {
-    color: #d3ac2b;
-    cursor: pointer;
-}
-.moveArrow {
-    margin-top: 20px;
-    transform: translateY(500px);
-    transform: rotate(180deg);
-    color: #d3ac2b;
-}
 .imgSpacing {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width: 1200px){
+    #home h1 {
+        font-size: 8em;
+    }
+    #home h3 {
+        font-size: 3.5em;
+    } 
+}
+@media only screen and (max-width: 1000px){
+    #home h1 {
+        font-size: 6em;
+    }
+    #home h3 {
+        font-size: 3em;
+    } 
+}
+
+@media only screen and (max-width:767px){
     #home .row {
         height: 60vh;
+    }
+}
+@media only screen and (max-width:560px){
+    #home {
+        margin: 20px 0px;
+    }
+    #home .row {
+        height: 100%;
+        margin-top: 20%;
     }
 }

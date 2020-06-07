@@ -32,13 +32,12 @@ const About = () => (
                   </div>
                 )
             }
-            console.log(data.users.edges[0].node.avatar.url)
             return(
                 <div className="container" id="about">
                     <div className="row">
                         <div className="col-md-8">
                         <h1>About Justin</h1>
-                            <div dangerouslySetInnerHTML={{ __html: data.users.edges[0].node.description }}/>
+                            <p>{data.users.edges[0].node.description}</p>
                         </div>
                         <div className="col-md-4">
                         <img src={data.users.edges[0].node.avatar.url} alt={data.users.edges[0].node.firstName} className="responsive-img z-depth-2"/>

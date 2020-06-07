@@ -10,3 +10,21 @@
 #about .col-md-4 {
     padding: 20px;
 }
+#about h1 {
+    font-size: 5.5em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+#about p {
+    line-height: 1.9em;
+    text-align: justify;
+}
+
+@media only screen and (max-width:560px){
+    #about {
+        margin: 80px 0px;
+    }
+    #about h1 {
+        font-size: 3em;
+    }
+}

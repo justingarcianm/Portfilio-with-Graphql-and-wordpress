@@ -2,14 +2,34 @@
     margin-top: 5%;
 }
 
+.project p {
+    text-align: justify;
+}
+
 #projects img {
     width: 100%;
+    margin: 20px 0px;
 }
 
 .divider {
     height: 1px;
     overflow: hidden;
     background-color: #e0e0e0;
+}
+
+.colorBar {
+    height: 100vh;
+    width: 600px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(235,200,30,1) 36%, rgba(255,255,255,1) 49%);
+    background: -webkit-linear-gradient(180deg, rgba(235,200,30,1) 36%, rgba(255,255,255,1) 49%);
+    background: linear-gradient(180deg, rgba(235,200,30,1) 36%, rgba(255,255,255,1) 49%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    background-attachment: fixed;
+    position: fixed;
+    top: 0%;
+    left: 70%;
+    z-index: -10;
 }
 
 .z-depth-2 {

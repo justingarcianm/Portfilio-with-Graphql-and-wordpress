@@ -53,6 +53,7 @@ const ContactForm = () => {
     className="form-control" 
     value={email} 
     onChange={e => setEmail(e.target.value)}
+    required
     />
 
   </div>
@@ -64,6 +65,7 @@ const ContactForm = () => {
     className="form-control" 
     value={name} 
     onChange={e => setName(e.target.value)}
+    required
     />
 
   </div>
@@ -75,7 +77,8 @@ const ContactForm = () => {
     className="form-control" 
     value={message} 
     onChange={e => setMessage(e.target.value)} 
-    rows="3"></textarea>
+    rows="3"
+    required></textarea>
 
   </div>
 
@@ -85,12 +88,13 @@ const ContactForm = () => {
     type="checkbox" 
     className="form-check-input" 
     id="exampleCheck1"
+    required
     />
 
     <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
   </div>
   <br/>
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="submit" className="btn btn-primary">Send message</button>
 </form>
     </div>
 

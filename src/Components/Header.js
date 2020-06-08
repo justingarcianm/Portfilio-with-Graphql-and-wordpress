@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <nav className="navbar navbar-expand-lg navbar-light fixed-top"> 
             <NavLink className="nav-link" to="/">
-            <h3 style={{color:"#222"}}>My Portfolio</h3>
+            <h3 style={{color:"#222"}}>Justin Garcia</h3>
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>

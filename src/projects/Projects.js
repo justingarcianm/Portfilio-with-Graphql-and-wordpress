@@ -41,11 +41,25 @@ const Projects = () => (
                 return(
                     <div id="projects">
                       <div className="container text-center">
-                    <h2 className="secondary-header">Projects</h2>
-                        {data.projects.edges.map( (project,key) =>  <Project key={key} project={project} number={key}/> )}
+                        <div className="row fixedHeight">
+                          <div className="col-md-4 my-auto">
+                          <h2 className="projects-header">Projects</h2>
+                          </div>
+                          <div className="col-md-8 projectWrapper">
+                          {data.projects.edges.map( (project,key) =>  <Project key={key} project={project} number={key}/> )}
+                          </div>
+                        </div>
                    </div>
                 </div>
                 )
+                // return(
+                //     <div id="projects">
+                //       <div className="container text-center">
+                //     <h2 className="secondary-header">Projects</h2>
+                //         {data.projects.edges.map( (project,key) =>  <Project key={key} project={project} number={key}/> )}
+                //    </div>
+                // </div>
+                // )
             }
         }
     </Query>

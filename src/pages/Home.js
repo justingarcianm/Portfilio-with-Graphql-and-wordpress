@@ -19,7 +19,7 @@ const Home = () => {
                     </div>
                     <div className="col-md-1"></div>
                     <div className="col-md-4 my-auto">
-                    <p>Need a problem solver? I am passionate in this field and I have the talent to back it up with experience in headless cms, front end development, and design. I am a natural one man team but I thrive in team settings. Learn more <Link to="/about">about me</Link> or just get to the <a href="#projects">projects.</a></p>
+                    <p>Need a problem solver? I am passionate in this field and I have the talent to back it up with experience in headless cms, front end development, and design. I am a natural one man team but I can  also thrive in collaborative settings. Learn more <Link to="/about">about me</Link> or just get to the <a href="#projects">projects.</a></p>
                     </div>
                     <div className="col-md-1"></div>
                 </div>

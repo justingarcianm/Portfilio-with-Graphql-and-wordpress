@@ -8,5 +8,20 @@ color:#eee;
 }
 
 footer .row {
-    height: 30vh;
+    padding: 15px 0px;
+}
+
+footer p{
+    font-weight: 300;
+}
+
+footer a {
+    color: #ebc81e;
+}
+footer a:hover {
+    color: #ebc81e;
+}
+
+footer i {
+    font-size: 3em;
 }
